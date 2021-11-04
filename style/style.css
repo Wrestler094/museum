@@ -1,0 +1,501 @@
+/* forum-regular - latin */
+@font-face {
+    font-family: 'Forum';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+    url('../assets/fonts/forum-v11-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('../assets/fonts/forum-v11-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* roboto-100 - latin */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 100;
+    src: local(''),
+    url('../assets/fonts/roboto-v29-latin-100.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('../assets/fonts/roboto-v29-latin-100.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* roboto-300 - latin */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    src: local(''),
+    url('../assets/fonts/roboto-v29-latin-300.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('../assets/fonts/roboto-v29-latin-300.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+body {
+    margin: 0;
+    font-size: 22px;
+    background-color: #030303;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+}
+
+h1, h2, h3 {
+    font-family: "Forum", serif;
+    font-weight: normal;
+    margin: 0;
+    letter-spacing: 5px;
+}
+
+h1, h2 {
+    font-size: 80px;
+    line-height: 90px;
+    text-transform: uppercase;
+}
+
+.heading_border {
+    border-bottom: 3px solid #710707;
+}
+
+.heading_gold {
+    color: #9D8665;
+}
+
+a {
+    color: white;
+}
+
+/* HEADER */
+
+.main-header {
+    width: 100%;
+    }
+
+.header-container {
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+}
+
+
+.logo {
+    margin-top: 74px;
+    margin-bottom: 76px;
+}
+
+.main-navigation {
+    margin-top: 74px;
+    margin-bottom: 76px;
+    margin-left: auto;
+}
+
+.main-navigation-list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.main-navigation-list li {
+    list-style: none;
+    margin-right: 76px;
+}
+
+.main-navigation-list li:last-child {
+    margin-right: 0;
+}
+
+.main-navigation a {
+    color: white;
+    font-weight: 100;
+    line-height: 50px;
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+
+.main-navigation a:hover, .main-navigation a:focus {
+    color: #9D8665;
+;
+}
+
+/* MAIN */
+
+.main-container {
+    width: 100%;
+    background: url(../assets/img/background.jpg) no-repeat top right;
+    background-size: 1215px 750px;
+}
+
+.wrapper {
+    background-color: white;
+    color: black;
+}
+
+section {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+    /* Welcome section */
+
+.welcome h1 {
+    padding-top: 115px;
+}
+
+.welcome p {
+    margin-top: 26px;
+    margin-bottom: 76px;
+    letter-spacing: 2px;
+}
+
+.welcome-button {
+    background-color: #710707;
+    width: 360px;
+    height: 75px;
+    margin-bottom: 246px;
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-size: 22px;
+    line-height: 26px;
+    letter-spacing: 2px;
+    border-radius: 10px;
+    border: none;
+}
+
+.welcome-button:hover {
+    background-color: #9d8665;
+    cursor: pointer;
+}
+
+.welcome-button a {
+    text-decoration: none;
+}
+
+    /* Visiting section*/
+
+.visiting {
+    padding: 75px 0;
+}
+
+.feature-list {
+    display: grid;
+    grid-template-columns: 440px 440px 440px;
+    gap: 75px 60px;
+    margin-top: 75px;
+    padding: 0;
+    list-style-type: none;
+}
+
+.feature-list-item {
+    width: 440px;
+}
+
+.feature-list-item a {
+    color: black;
+    text-decoration: none;
+}
+
+.feature-list-item a:hover {
+    color: #9d8665;
+}
+
+.feature-list-item a h3 {
+    margin-top: 25px;
+    margin-bottom: 9px;
+    font-size: 32px;
+    line-height: 35px;
+    text-transform: uppercase;
+}
+
+.feature-list-item p {
+    margin: 0;
+    font-weight: 100;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.feature-list-item p:nth-child(2) {
+    border-top: 3px solid #710707;
+    width: 300px;
+    padding-top: 10px;
+    margin-bottom: 10px;
+    font-size: 22px;
+    line-height: 26px;
+}
+
+
+
+
+
+    /* Explore section */
+
+.explore {
+    display: flex;
+}
+
+.explore-wrapper {
+    padding-right: 60px;
+}
+
+.explore-wrapper h2 {
+    width: 660px;
+    margin: 75px 0;
+}
+
+.explore-wrapper p {
+    font-family: "Roboto", sans-serif;
+    margin: 25px auto;
+    line-height: 38px;
+}
+
+.explore img {
+    margin: 90px 0 75px auto;
+}
+
+.explore-wrapper-markered {
+    color: #9d8665;
+}
+
+    /* Video section */
+
+.video {
+    padding-top: 90px;
+    padding-bottom: 75px;
+}
+
+.video-wrapper {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-top: 40px;
+}
+
+.video-wrapper p {
+    width: 720px;
+    line-height: 38px;
+    margin: 0 0 0 auto;
+}
+
+
+
+
+
+/* Buy tickets */
+
+.tickets {
+    padding: 75px 0;
+}
+
+.tickets-wrapper {
+    margin-top: 75px;
+    display: flex;
+}
+
+.tickets-form {
+    display: flex;
+    width: 720px;
+    padding-left: 60px;
+}
+
+.tickets-form legend {
+    font-size: 28px;
+    line-height: 33px;
+    font-weight: bold;
+}
+
+.tickets-form label {
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 26px;
+}
+
+.tickets-form-wrapper {
+    margin-left: auto;
+}
+
+.tickets-form-wrapper p {
+    margin: 15px 0 50px 0;
+    font-size: 28px;
+    line-height: 33px;
+    font-weight: bold;
+    text-align: right;
+}
+
+.tickets-form-fieldset {
+    width: 270px;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+.tickets-form-fieldset p {
+    margin: 50px 0;
+}
+
+.tickets-form-inner-fieldset {
+    width: 150px;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+.tickets-form-inner-fieldset legend {
+    text-align: right;
+    margin-bottom: 11px;
+}
+
+.tickets-form-inner-fieldset input {
+    margin-top: 9px;
+    margin-bottom: 35px;
+}
+
+.tickets-button {
+    width: 175px;
+    height: 50px;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 2px;
+    border-radius: 2px;
+    background-color: white;
+    border: none;
+}
+
+.tickets-button:hover {
+    background-color: #9d8665;
+    cursor: pointer;
+}
+
+    /* Contacts section */
+
+.contacts {
+    padding: 75px 0;
+}
+
+.contacts-wrapper {
+    display: flex;
+    padding-top: 75px;
+}
+
+.contacts-wrapper-inner p {
+    font-size: 28px;
+    line-height: 33px;
+    font-weight: bold;
+    margin: 10px 0 36px 0;
+}
+
+.contacts-address {
+    font-style: normal;
+    line-height: 26px;
+}
+
+.contacts-address-wrapper {
+    margin: 20px 0;
+}
+
+.contacts-address a {
+    color: black;
+    text-decoration: none;
+}
+
+.contacts-address a:hover {
+    color: #9d8665;
+}
+
+.contacts-wrapper img {
+    margin-left: auto;
+}
+
+
+
+/* FOOTER */
+
+.bottom-footer {
+    background-color: #030303;
+    color: white;
+}
+
+.footer-container {
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    padding: 75px 0;
+}
+
+.logo-bottom {
+    margin: 0 145px 0 0;
+    align-self: flex-start;
+}
+
+.bottom-footer-navigation {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 150px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.bottom-footer-navigation li {
+    margin-right: 150px;
+}
+
+.bottom-footer-navigation a {
+    line-height: 50px;
+    text-decoration: none;
+    font-weight: 100;
+}
+
+.bottom-footer-navigation a:hover,
+.bottom-footer-navigation a:focus {
+    color: #9d8665;
+}
+
+.bottom-footer-social {
+    display:flex;
+    margin: 0 0 0 auto;
+    padding: 0;
+    align-self: flex-end;
+    list-style-type: none;
+}
+
+.social-list-item {
+    margin-right: 24px;
+}
+
+.social-list-item:last-child {
+    margin-right: 0;
+}
+
+
+.social-list-item a {
+    display: block;
+    width: 48px;
+    height: 48px;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+.social-list-item a svg {
+    display: block;
+    margin: 0 auto;
+    height: 48px;
+}
+
+.social-list-item a:hover {
+    border: 1px solid #9d8665;
+}
+
+.social-list-item a:hover svg path {
+    fill: #9d8665;
+}
+
+
+
+
+
+
+
+
+
+
+
+
