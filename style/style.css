@@ -27,6 +27,13 @@
     url('../assets/fonts/roboto-v29-latin-300.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
 body {
     margin: 0;
     font-size: 22px;
@@ -75,12 +82,12 @@ a {
 /* HEADER */
 
 .main-header {
-    width: 100%;
-    }
+    width: 1500px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
 
 .header-container {
-    max-width: 1440px;
-    margin: 0 auto;
     display: flex;
 }
 
@@ -128,21 +135,31 @@ a {
 
 .main-container {
     width: 100%;
+    min-width: 1500px;
     background: url(../assets/img/background.jpg) no-repeat top right;
     background-size: 1215px 750px;
 }
 
 .wrapper {
+    width: 100%;
+    min-width: 1500px;
     background-color: white;
     color: black;
 }
 
-section {
-    max-width: 1440px;
+.wrapper section {
+    width: 1500px;
     margin: 0 auto;
+    padding: 60px 30px;
 }
 
     /* Welcome section */
+
+.welcome {
+    width: 1500px;
+    padding: 0 30px;
+    margin: 0 auto;
+}
 
 .welcome h1 {
     padding-top: 115px;
@@ -230,15 +247,14 @@ section {
     line-height: 26px;
 }
 
-
-
-
-
-
     /* Explore section */
 
 .explore {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 1500px;
+    padding: 0 30px;
+    margin: 0 auto;
 }
 
 .explore-wrapper {
@@ -246,7 +262,6 @@ section {
 }
 
 .explore-wrapper h2 {
-    width: 660px;
     margin: 75px 0;
 }
 
@@ -257,7 +272,10 @@ section {
 }
 
 .explore img {
-    margin: 90px 0 75px auto;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 90px 0 75px 0;
 }
 
 .explore-wrapper-markered {
@@ -269,6 +287,10 @@ section {
 .video {
     padding-top: 90px;
     padding-bottom: 75px;
+}
+
+.video__iframe {
+    width: 100%;
 }
 
 .video-wrapper {
@@ -287,7 +309,9 @@ section {
 /* Buy tickets */
 
 .tickets {
-    padding: 75px 0;
+    width: 1500px;
+    padding: 75px 30px;
+    margin: 0 auto;
 }
 
 .tickets-wrapper {
@@ -460,10 +484,10 @@ section {
 }
 
 .footer-container {
-    max-width: 1440px;
+    width: 1500px;
     margin: 0 auto;
     display: flex;
-    padding: 75px 0;
+    padding: 75px 30px;
 }
 
 .logo-bottom {
